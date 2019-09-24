@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#mybody{width: 800px; margin: auto; background-color: black;}
+		#aaa{margin: auto; display: block; position: absolute; margin-top: 20px; width: 500px;z-index: 2;}
+		#bbb{margin: auto; display: block; position: absolute; margin-top: 300px; margin-left: 60px;z-index: 2;}
+		#ccc{margin: auto; display: block; position: absolute; margin-top: 520px; margin-left: 200px; width: 100px;z-index: 2;}
+		#ddd{opacity: 0; position : absolute;z-index: 0;}
+		#eee{opacity: 0; position : absolute; margin-top: 300px;z-index: 1;}
+		#fff{opacity: 0; position : absolute; margin-top: 10px; margin-left: 500px; z-index: 0;}
+		#ggg{opacity: 0; position : absolute; width: 700px; margin-top: 10px; margin-left: 400px; z-index: 1;}
+		#hhh{opacity: 0; position : absolute; margin-top: 200px; margin-left: -470px; z-index: 0; width: 450px;}
+		#iii{opacity: 0; position : absolute; margin-top: 200px; margin-left: -470px; z-index: 0; width: 450px;}
+		#jjj{opacity: 0; position : absolute; margin-top: 500px; margin-left: 800px; z-index: 1; width: 200px;}
+		#kkk{opacity: 0; position : absolute; margin-top: 450px; margin-left: 700px; z-index: 1; width: 200px;}
+	</style>
+
+</head>
+<body id="mybody">
+	<img src="01.gif" id="aaa">
+	<img src="02.gif" id="bbb">
+	<img src="05.gif" id="ccc">
+	<img src="03.gif" id="ddd">
+	<img src="06.gif" id="eee">
+	<img src="07.gif" id="fff">
+	<img src="08.gif" id="ggg">
+	<img src="09.gif" id="hhh">
+	<img src="11.gif" id="iii">
+	<img src="12.gif" id="jjj">
+	<img src="13.gif" id="kkk">
+
+	<audio id="mmm" loop>
+ 	<source src="10.mp3" type="audio/mpeg">
+	</audio>
+
+	<script type="text/javascript">
+		bbb.onclick = function(){
+			mmm.play();
+			aaa.style.opacity = "0"
+			bbb.style.opacity = "0"
+			ccc.style.opacity = "0"
+			ddd.style.opacity = "1"
+			eee.style.opacity = "1"
+			fff.style.opacity = "1"
+			ggg.style.opacity = "1"
+			hhh.style.opacity = "1"
+			iii.style.opacity = "1"
+			jjj.style.opacity = "1"
+			kkk.style.opacity = "1"
+			mybody.style.background = "url('03.gif')";
+			mybody.style.backgroundSize = "200px auto";
+		}	
+	</script>
+
+</body>
+</html>
